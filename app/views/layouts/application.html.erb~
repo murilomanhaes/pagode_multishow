@@ -10,37 +10,65 @@
 
 
 <div id="tudo">
+    
+    <% if usuario_signed_in? %>
+		  <div id="usuariologado">  
+	      <a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %>
+		    </p></a>
+		    
+		    <a><%= link_to 'Sair', destroy_usuario_session_path, method: :delete, :class => "sair"  %></a>
+		    
+		  </div>
+		<% end %>
+		
+		<br><br>
+		
 		<div id="cabecalho">
 			
 		</div>
 		
 		<div id="menu">
-		  <% if usuario_signed_in? %>
-		    <a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %>
-		    </p></a>
-			<% end %>
-				  
-			<%= link_to "Inicial",root_path %>
+		  <%= link_to "Inicial",root_path %>
 			<a href="historia.html">História</a>
 			<a href="agenda.html">Agenda</a>
 			<a href="fotos/fotos.html">Fotos</a>
 			<a href="local.html">Local</a>
 			<a href="recado.php">Recado</a>
-			<a class="lastchild" href="contato.html">Contato</a>
+
+			<% if usuario_signed_in? %>
+				<a class="lastchild" href="contato.html">Contato</a> 
+			<%else%>
+			  <a href="contato.html">Contato</a>
+			  <%= link_to "Login", usuario_session_path %>
+			  <%= link_to "Cadastra-se", new_usuario_path, :class => "lastchild" %>
+			<% end %>
+		
 		</div>
 		
-		<div id="conteudo">
-		
-		  <div id="conteudo-cima">
-			
-				<div id="conteudo-baixo">
-		
+	  <div id="conteudo-cima">
+	 
+	  </div>
+	  
+	  <div id="conteudo">
+	    <% if notice %>
+        <div id='notice'>
+          <h1>Aviso</h1>
+          <p><%= notice %></p>
+        </div>
+      <% end %>
+
+      <% if alert %>
+        <div id='alert'>
+          <h1>Erro</h1>
+          <p><%= alert %></p>
+        </div>
+      <% end %>
+				
 		  <%= yield %>
-		  
-		  
-		    </div>
-		    
-		  </div>
+		      		    
+		</div>
+		
+		<div id="conteudo-baixo">
     
     </div>
     

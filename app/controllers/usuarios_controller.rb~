@@ -1,6 +1,6 @@
 class UsuariosController < ApplicationController
- 
-  
+  # GET /usuarios
+  # GET /usuarios.json
   def index
     @usuarios = Usuario.all
 

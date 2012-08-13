@@ -49,68 +49,7 @@
 
   <br><br>
 
-  <fieldset class="dados_fieldset">
-    <legend> Dados Posto</legend>
-      <br>
-
-   		<%= f.input :posto, member_label: :nome, include_blank: true%>
-      <%= f.input :tipo, as: :select, collection: ["Administrador", "Atendente"] %>      
-   	</fieldset>
-
-
-
-
-<br><br>
-  <%= f.submit 'Salvar' %>
+   <%= f.submit 'Salvar' %>
 <% end %>
 
 </div>
-
-  <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
-    <%= f.label :sobrenome %><br />
-    <%= f.text_field :sobrenome %>
-  </div>
-  <div class="field">
-    <%= f.label :sexo %><br />
-    <%= f.text_field :sexo %>
-  </div>
-  <div class="field">
-    <%= f.label :telefone %><br />
-    <%= f.text_field :telefone %>
-  </div>
-  <div class="field">
-    <%= f.label :endereco %><br />
-    <%= f.text_field :endereco %>
-  </div>
-  <div class="field">
-    <%= f.label :complemento %><br />
-    <%= f.text_field :complemento %>
-  </div>
-  <div class="field">
-    <%= f.label :bairro %><br />
-    <%= f.text_field :bairro %>
-  </div>
-  <div class="field">
-    <%= f.label :cidade %><br />
-    <%= f.text_field :cidade %>
-  </div>
-  <div class="field">
-    <%= f.label :estado %><br />
-    <%= f.text_field :estado %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :data_nascimento %><br />
-    <%= f.date_select :data_nascimento %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

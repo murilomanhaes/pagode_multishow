@@ -1,5 +1,6 @@
 PagodeMultishow::Application.routes.draw do
-  devise_for :usuarios
+  
+  devise_for :usuarios, controllers: { registrations: 'usuarios' }
 
   resources :usuarios
 

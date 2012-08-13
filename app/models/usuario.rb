@@ -3,8 +3,15 @@ class Usuario < ActiveRecord::Base
         :recoverable, :trackable
 
   # Setup accessible (or protected) attributes for your model
+  
   attr_accessible :email, :password, :password_confirmation, :bairro, 
   :cidade, :complemento, :data_nascimento, :endereco, :estado, :nome, 
   :sexo, :sobrenome, :telefone
   
+  validates :nome, :sobrenome, :sexo, :data_nascimento, :telefone, :endereco,
+   :bairro, :cidade, :estado, :email, :password, :password_confirmation, 
+   presence: true
+   
+   validates :email, format:/^.+\@.+\..+$/
+      
 end

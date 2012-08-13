@@ -1,4 +1,4 @@
-<div id="formulario">
+<div id="dadosformulario">
 <p>
   <b>Nome:</b>
   <%= @usuario.nome %>

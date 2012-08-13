@@ -26,7 +26,7 @@ img {
 
 h2 {
 	margin: 0px;
-	padding: 0px 0px 10px 0px;
+	padding: 0px 0px 5px 0px;
 	font:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	font-style:italic;
@@ -37,32 +37,9 @@ h2 b{
 	color:#341c12;
 }
 
-ul {
-	margin: 0px;
-	padding: 0px;
-}
-
-li {
-	margin: 0px;
-	padding: 0px 0px 5px 20px;
-	list-style: none;
-	background: 0px 3px url("/assets/bullet.gif") no-repeat;
-}
-
-p {
-	margin-top: 0px;
-	margin-bottom: 10px;
-}
-
-p.more {
-	text-align: right;
-}
-
 .clear {
 	clear: both;
 }
-
-
 
 
 /*Configurações para a estrutura toda do site*/
@@ -71,6 +48,104 @@ p.more {
 	width: 920px;
 	margin: auto;
 	text-align: left;
+}
+
+#usuariologado {
+	width: 862px;
+	height:20px;
+	margin: 13px 0px 3px 27px;
+	background-image:url("/assets/nav.gif");
+	background-repeat:no-repeat;
+	float:left;
+}
+
+#usuariologado .ola{
+  float: left;
+  margin-left: 20px;
+  margin-top: 2px;
+  font-size:15px;
+  font-style:italic;
+	color:#260403;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#usuariologado .usuarionome{
+  float: left;
+  margin-left: 7px;
+  margin-top: 2px;
+  font-size:15px;
+  font-style:italic;
+	color:#ffffff;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#usuariologado .sair{
+  float: right;
+  margin-right: 20px;
+  margin-top: 2px;
+  font-size:15px;
+  font-style:italic;
+	color:#ffffff;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+
+/*Configurações para as noticias e alertas*/
+
+#notice {
+  float: left;
+  min-width: 100px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+
+#notice h1 {
+  float: left;
+  width: 45px;
+  margin: 1px;
+  text-align: center;
+  font-size: 15px;
+  background-color: green;
+  color: white;
+}
+
+#notice p{
+  float: left;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#alert {
+  float: left;
+  min-width: 100px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+
+#alert h1 {
+  float: left;
+  width: 40px;
+  margin: 1px;
+  text-align: center;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
+
+#alert p{
+  float: left;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 
@@ -83,28 +158,17 @@ p.more {
 	background: url("/assets/cabecalho.gif") no-repeat;
 }
 
-#cabecalho img{
-	width: 90px;
-	height: 80px;
-	float: right;
-	margin-top: 20px;
-	margin-right: 20px;
-}
-
-
 
 /*Confugurações para o menu*/
 
 #menu {
 	width: 862px;
-	height:48px;
+	height:35px;
 	margin: 5px 0px 3px 27px;
 	background-image:url("/assets/nav.gif");
-	background-repeat:no-repeat;
-	display:inline;
 	float:left;
-	
 }
+
 #menu a {
 	font-size:15px;
 	font-style:italic;
@@ -112,16 +176,17 @@ p.more {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	margin: 8px 0px 10px 0px;
 	padding: 0px 12px 0px 12px;
-	display:inline;
 	float:left;
 	border-right-width: 2px;
 	border-right-style: inset;
 	border-right-color: #76644f;
 }
+
 #menu a:hover {
 	color:#862e06;
 	text-decoration:none;
 }
+
 
 .lastchild {
 	border-right: none 0px !important;
@@ -130,9 +195,42 @@ p.more {
 
 
 
+
+
+
+/*configurações para conteudo*/
+
+#conteudo {
+  float: left;
+	background: url("/assets/body_bg2.gif") repeat-y;
+	width: 920px;
+	min-height: 300px;
+	margin-top: -30px;
+}
+
+#conteudo-cima {
+  float: left;
+  width: 920px;
+  height: 50px;
+	background: url("/assets/body_top.gif") no-repeat;
+}
+
+#conteudo-baixo {
+  float: left;
+  width: 920px;
+  height: 50px;
+  margin-bottom: -30px;
+  background: url("/assets/body_bot.gif") no-repeat;
+}
+
+
+
+
+
 /*Configurações para o primeiro rodape*/
 
 #rodape {
+  clear: both;
 	width: 880px;
 	margin-left: 20px;
 	background: url("/assets/foot_bg.gif") repeat-y;
@@ -194,30 +292,111 @@ p.more {
 
 #desenvolvido a{
 	float: left;
-	margin-top: -25px;
+	margin-top: -30px;
 	margin-left: 123px;
 }
 	
 
 
 
+/*Configurações para o login*/
 
-
-
-/*configurações para conteudo*/
-
-#conteudo {
-	background: url("/assets/body_bg.gif") repeat-y;
-	clear: both;
-	width: 100%;
+#login{
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  background:url("/assets/acessorestrito.gif");
 }
 
-#conteudo-cima {
-	background: url("/assets/body_top.gif") no-repeat;
+#loginconteudo{
+  float: left;
+  width: 390px;
+  height: 140px;
+  margin-top: 165px;
+  margin-left: 50px;
 }
 
-#conteudo-baixo {
-	background: bottom url("/assets/body_bot.gif") no-repeat;
-	padding: 21px 25px 15px 42px;
+
+
+
+
+
+/*Configurações para formulario*/
+
+#dadosformulario{
+  float: left;
+  width: 870px;
+  min-height: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+ }
+ 
+#dadosformulario strong{
+  margin-left: 40px;
+}
+  
+#formulario{
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+
+#formulario li {
+  float: left;
+  width: 700px;
+  list-style-type:none;
+}
+
+.dados_fieldset legend{
+  font:14px/19px Arial, Helvetica, sans-serif; 
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.dados_fieldset label{
+  float: left;
+  margin-left: 20px;
+}
+
+
+.inline-errors{
+  margin-left: 52%;
+  margin-top: -21px;
+  color: #FF0000;
+  font:14px/19px Arial, Helvetica, sans-serif; 
+	font-weight:normal;
+}
+
+
+.formtastic abbr {
+  border:0;
+  font-variant:normal;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FF0000;
+}
+
+.formtastic .input {
+  overflow:hidden; /* clear containing floats */
+  padding:0.5em 0; /* padding and negative margin juggling is for Firefox */
+  margin-top:-0.5em;
+  margin-bottom:1em;
+}
+
+.formtastic .input .label {
+  display:block;
+  width:14%;
+  float:left;
+  padding-top:.2em;
+  font:14px/19px Arial, Helvetica, sans-serif; 
+	color:#4D371E; 
+	font-weight:normal; 
+	display:block;
 }
 

@@ -3,7 +3,6 @@
 	<strong>Preencha o formulário abaixo para ser um usuário cadastrado e tenha acesso a conteudo exclusivo.</strong><br><br>
 
   <%= render 'form' %>
-  
 </div>
 
 
