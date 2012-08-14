@@ -29,10 +29,10 @@
 		
 		<div id="menu">
 		  <%= link_to "Inicial",root_path %>
-			<a href="historia.html">História</a>
+			<%= link_to "história", historias_path %>
 			<a href="agenda.html">Agenda</a>
 			<a href="fotos/fotos.html">Fotos</a>
-			<a href="local.html">Local</a>
+			<%= link_to "Local", locais_path %>
 			<a href="recado.php">Recado</a>
 
 			<% if usuario_signed_in? %>

@@ -296,6 +296,17 @@ h2 b{
 	margin-left: 123px;
 }
 	
+	
+/*Configurações para a pagina principal*/
+
+#home{
+  float: left;
+  width: 870px;
+  min-height: 300px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
 
 
 
@@ -398,5 +409,50 @@ h2 b{
 	color:#4D371E; 
 	font-weight:normal; 
 	display:block;
+}
+
+
+
+
+/*Configurações para a pagina de historia*/
+
+#historia {
+	float: left;
+  width: 870px;
+  min-height: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#historia img{
+	float: left;
+	margin-left: 20px;
+}
+
+#historia .destaque{
+	color: white;
+	font-weight: bold;
+}
+
+
+
+
+
+/*Configurações para a localização*/
+
+#local {
+	float: left;
+	width: 870px;
+	min-height: 300px; 
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#local iframe{
+	float: left;
+	width: 800px;
+	height: 500px;
+	margin-left: 37px;
+	margin-bottom: 20px;
 }
 

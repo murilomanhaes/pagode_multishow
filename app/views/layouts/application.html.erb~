@@ -29,7 +29,7 @@
 		
 		<div id="menu">
 		  <%= link_to "Inicial",root_path %>
-			<a href="historia.html">História</a>
+			<%= link_to "história", historias_path %>
 			<a href="agenda.html">Agenda</a>
 			<a href="fotos/fotos.html">Fotos</a>
 			<a href="local.html">Local</a>
