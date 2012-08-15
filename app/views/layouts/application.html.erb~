@@ -13,7 +13,7 @@
     
     <% if usuario_signed_in? %>
 		  <div id="usuariologado">  
-	      <a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %>
+	      <a><p class="ola">Olá</p> <p class="usuarionome"><%= current_usuario.nome %> <%= current_usuario.tipo %>
 		    </p></a>
 		    
 		    <a><%= link_to 'Sair', destroy_usuario_session_path, method: :delete, :class => "sair"  %></a>
@@ -29,10 +29,10 @@
 		
 		<div id="menu">
 		  <%= link_to "Inicial",root_path %>
-			<%= link_to "história", historias_path %>
-			<a href="agenda.html">Agenda</a>
+			<%= link_to "História", historias_path %>
+			<%= link_to "Agenda", opcao_agendas_path %>
 			<a href="fotos/fotos.html">Fotos</a>
-			<a href="local.html">Local</a>
+			<%= link_to "Local", locais_path %>
 			<a href="recado.php">Recado</a>
 
 			<% if usuario_signed_in? %>

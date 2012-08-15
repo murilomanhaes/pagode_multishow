@@ -1,0 +1,3 @@
+class Agenda < ActiveRecord::Base
+  attr_accessible :data, :descricao, :horario, :tipo
+end

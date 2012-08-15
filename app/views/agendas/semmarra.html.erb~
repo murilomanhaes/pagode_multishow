@@ -1,0 +1,11 @@
+<div id="agenda"> 
+  <h2><b>Agenda</b> Grupo Sem Marra</h2><br/> 
+  
+   
+    <% @agendas.each do |agenda| %>
+      <div class ="dadosagenda">  
+        <h4><%= agenda.data.to_s_br %> - </h4> <h3><%= agenda.descricao %> -</h3> <h2>À partir das <%= agenda.horario %></h2>
+      </div>
+    <% end %>
+ 
+</div>

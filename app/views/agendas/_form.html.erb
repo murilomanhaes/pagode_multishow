@@ -1,0 +1,25 @@
+<div id="formulario">
+  <%= semantic_form_for(@agenda) do |f| %>
+
+  <fieldset class="dados_fieldset">
+    <legend> Dados evento</legend>
+    <br>
+        <%= f.input :data, as: :string, input_html: opcoes_para_data %>
+        
+        <%= f.input :descricao %>
+        
+        <%= f.input :horario %>
+        
+        <%= f.input :tipo, as: :select, collection: ["Sem Marra", "Multishow"]%>
+
+
+  </fieldset>
+   
+    
+    
+  <br><br>
+
+   <%= f.submit 'Salvar' %>
+<% end %>
+
+</div>

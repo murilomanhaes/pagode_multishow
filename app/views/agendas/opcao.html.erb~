@@ -1,0 +1,7 @@
+<div id="agenda"> 
+  <h2><b>Confira</b> as Agendas</h2><br/>
+  
+    <%= link_to "", pagode_agendas_path, :class => "agendapagode" %>
+    <%= link_to "", semmarra_agendas_path, :class => "agendasemmarra" %>
+
+</div>

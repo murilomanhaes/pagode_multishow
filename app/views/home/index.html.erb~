@@ -1,4 +1,15 @@
 <div id="home">
+  <% if can? :manage, :all %>
+   <div id="menuadminitrador">
+	   <%= link_to 'teste', :class => "menualterar" %>
+	   <%= link_to 'teste2', :class => "menucadastrar" %>
+	   <%= link_to 'teste3', :class => "menuconsultar" %>
+	 </div>
+	
+	<% else %>
+	
+	
+	<% end %>
 
 
 </div>

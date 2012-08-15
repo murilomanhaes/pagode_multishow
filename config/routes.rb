@@ -1,5 +1,21 @@
 PagodeMultishow::Application.routes.draw do
   
+  resources :agendas do
+    collection do
+      get :opcao
+      get :semmarra
+      get :pagode
+    end
+  end
+  
+  resources :administracoes do 
+     collection do
+      get :alterar_deletar
+      get :cadastrar
+      get :consultar_relatorio
+    end
+  end
+  
   devise_for :usuarios, controllers: { registrations: 'usuarios' }
 
   resources :usuarios

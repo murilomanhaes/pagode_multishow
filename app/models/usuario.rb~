@@ -6,13 +6,12 @@ class Usuario < ActiveRecord::Base
   
   attr_accessible :email, :password, :password_confirmation, :bairro, 
   :cidade, :complemento, :data_nascimento, :endereco, :estado, :nome, 
-  :sexo, :sobrenome, :telefone
+  :sexo, :sobrenome, :telefone, :tipo
   
   validates :nome, :sobrenome, :sexo, :data_nascimento, :telefone, :endereco,
    :bairro, :cidade, :estado, :email, :password, :password_confirmation, 
    presence: true
    
    validates :email, format:/^.+\@.+\..+$/
-   validates :email, uniqueness:true
-   
+      
 end
