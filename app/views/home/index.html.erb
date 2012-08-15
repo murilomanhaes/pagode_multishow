@@ -1,9 +1,9 @@
 <div id="home">
   <% if can? :manage, :all %>
    <div id="menuadminitrador">
-	   <%= link_to '', root_path, :class => "menualterar" %>
-	   <%= link_to '', root_path, :class => "menucadastrar" %>
-	   <%= link_to '', root_path, :class => "menuconsultar" %>
+	   <%= link_to '', alterar_deletar_administracoes_path, :class => "menualterar" %>
+	   <%= link_to '', cadastrar_administracoes_path, :class => "menucadastrar" %>
+	   <%= link_to '', consultar_relatorio_administracoes_path, :class => "menuconsultar" %>
 	 </div>
 	
 	<% else %>

@@ -4,7 +4,7 @@ class AgendasController < ApplicationController
   before_filter :authenticate_usuario!
   
   def index
-    @agendas = Agenda.all
+    @agendas = Agenda.order('data asc')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -84,7 +84,7 @@ class AgendasController < ApplicationController
   end
   
   def pagode
-    @agendas = Agenda.where(:tipo => 'pagode').order('data asc')
+    @agendas = Agenda.where(:tipo => 'Multishow').order('data asc')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -93,7 +93,7 @@ class AgendasController < ApplicationController
   end
   
   def semmarra
-    @agendas = Agenda.where(:tipo => 'sem marra').order('data asc')
+    @agendas = Agenda.where(:tipo => 'Sem Marra').order('data asc')
 
     respond_to do |format|
       format.html # index.html.erb

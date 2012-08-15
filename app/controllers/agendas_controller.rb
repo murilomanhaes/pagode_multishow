@@ -4,7 +4,7 @@ class AgendasController < ApplicationController
   before_filter :authenticate_usuario!
   
   def index
-    @agendas = Agenda.all
+    @agendas = Agenda.order('data asc')
 
     respond_to do |format|
       format.html # index.html.erb

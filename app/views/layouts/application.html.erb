@@ -31,14 +31,14 @@
 		  <%= link_to "Inicial",root_path %>
 			<%= link_to "História", historias_path %>
 			<%= link_to "Agenda", opcao_agendas_path %>
-			<a href="fotos/fotos.html">Fotos</a>
+			<a href="#">Fotos</a>
 			<%= link_to "Local", locais_path %>
-			<a href="recado.php">Recado</a>
+			<a href="#">Recado</a>
 
 			<% if usuario_signed_in? %>
-				<a class="lastchild" href="contato.html">Contato</a> 
+				<a class="lastchild" href="#">Contato</a> 
 			<%else%>
-			  <a href="contato.html">Contato</a>
+			  <a href="#">Contato</a>
 			  <%= link_to "Login", usuario_session_path %>
 			  <%= link_to "Cadastra-se", new_usuario_path, :class => "lastchild" %>
 			<% end %>

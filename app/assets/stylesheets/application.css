@@ -530,7 +530,32 @@ h2 b{
   margin-top: 60px;
   background: url("/assets/semmarra.gif") no-repeat 0 0;
  }
+ 
+ #relatorioagenda {
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  margin-left: 80px;
+} 
 
+#relatorioagenda table {
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  border:1px solid #4F4F4F;
+}
+
+#relatorioagenda th {
+  text-align: center;
+  background-color: #EEE9E9;
+  border:1px solid #4F4F4F;
+}
+
+#relatorioagenda td {
+  text-align: center;
+  padding: 7px;
+  border:1px solid #4F4F4F;
+}
 
 
 

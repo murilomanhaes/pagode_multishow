@@ -1,8 +1,13 @@
-<div id="dadosformulario">
-  <h2><b>Cadastrar</b> Agenda</h2><br>
-	<strong>Preencha o formulário abaixo para cadastrar evento na agenda do sistema.</strong><br><br>
+<div id="home">
+  <div id="dadosformulario">
+    <h2><b>Cadastrar</b> Agenda</h2><br>
+	  <strong>Preencha o formulário abaixo para cadastrar evento na agenda do sistema.</strong><br><br>
 
-  <%= render 'form' %>
-  
+    <%= render 'form' %>
+    
+  </div>
+
+  <%= link_to "", cadastrar_administracoes_path, :class => "voltar" %>
+
 </div>
 
