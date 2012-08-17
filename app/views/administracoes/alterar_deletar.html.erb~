@@ -1,7 +1,9 @@
+<div id="home">
   <div id="menuadminitrador">
-	   
+	   	  <%= link_to 'Agenda', alterar_deletar_agendas_path, :class => "alteraragenda" %>	
 	</div>
 	
-		 <%= link_to '', root_path, :class => "voltar"%>
-		 
+	<%= link_to '', root_path, :class => "voltar"%>
+	
+</div>	 
 

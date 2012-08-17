@@ -5,6 +5,8 @@ PagodeMultishow::Application.routes.draw do
       get :opcao
       get :semmarra
       get :pagode
+      get :alterar_deletar
+      get :consultar
     end
   end
   

@@ -1,13 +1,5 @@
 <div id="agenda">
-  <h2><b>Consultar e Relatório</b> agenda</h2><br/>
-  
-  <div id='consulta'> 
-   <%= form_tag consultar_agendas_path, method: :get do %>
-     <%= label_tag :data, 'Busca por data' %>
-     <%= text_field_tag :data %>
-     <%= submit_tag 'Buscar' %>
-   <% end %>
-  </div>
+  <h2><b>Agendas</b> cadastradas</h2><br/>
 
   <div id = "relatorioagenda">
     <table>
@@ -16,6 +8,7 @@
         <th>Descrição</th>
         <th>Horário</th>
         <th>Tipo</th>
+        <th></th>
       </tr>
       
 
@@ -25,6 +18,9 @@
         <td><%= agenda.descricao %></td>
         <td><%= agenda.horario %></td>
         <td><%= agenda.tipo %></td>
+        <td class="tabelatamanho"><%= link_to '', edit_agenda_path(agenda), :class=> "editar"%>
+            <%= link_to '', agenda, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %>
+        </td>
       </tr>
     <% end %>
     </table>
@@ -33,4 +29,4 @@
     
 </div>
 
-   <%= link_to '', consultar_relatorio_administracoes_path, :class => "voltar"%>
+   <%= link_to '', alterar_deletar_administracoes_path, :class => "voltar"%>

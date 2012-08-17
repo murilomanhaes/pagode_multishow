@@ -99,6 +99,35 @@ h2 b{
  }
 
 
+.editar {
+  float: left;
+  width: 18px;
+  height: 18px;
+  background: url("/assets/editar.png") no-repeat 0 0;
+ }
+ 
+ .deletar {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-left: 25px;
+  margin-top: -15px;
+  background: url("/assets/deletar.gif") no-repeat 0 0;
+ }
+
+.tabelatamanho{
+  width: 20px;
+ }
+ 
+ #consulta {
+  float: left;
+  width: 410px;
+  height: 25px;
+  margin-left: 225px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
 /*Configurações para as noticias e alertas*/
 
 #notice {
@@ -558,6 +587,29 @@ h2 b{
 }
 
 
+.cadagenda {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 80px;
+  background: url("/assets/cadagenda.gif") no-repeat 0 0;
+ }
+ 
+ .alteraragenda {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 80px;
+  background: url("/assets/alteraroudeletaragenda.gif") no-repeat 0 0;
+ }
+
+.consultaragenda {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 80px;
+  background: url("/assets/consultarerelatorioagenda.gif") no-repeat 0 0;
+ }
 
 
 

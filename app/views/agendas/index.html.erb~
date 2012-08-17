@@ -1,5 +1,13 @@
 <div id="agenda">
-  <h2><b>Agendas</b> cadastradas</h2><br/>
+  <h2><b>Consultar e Relatório</b> agenda</h2><br/>
+  
+  <div id='consulta'> 
+   <%= form_tag consultar_agendas_path, method: :get do %>
+     <%= label_tag :data, 'Busca por data' %>
+     <%= text_field_tag :data %>
+     <%= submit_tag 'Buscar' %>
+   <% end %>
+  </div>
 
   <div id = "relatorioagenda">
     <table>

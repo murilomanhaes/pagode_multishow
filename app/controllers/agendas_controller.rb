@@ -11,6 +11,15 @@ class AgendasController < ApplicationController
       format.json { render json: @agendas }
     end
   end
+  
+  def alterar_deletar
+    @agendas = Agenda.order('data asc')
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @agendas }
+    end
+  end
 
   # GET /agendas/1
   # GET /agendas/1.json
@@ -78,7 +87,7 @@ class AgendasController < ApplicationController
     @agenda.destroy
 
     respond_to do |format|
-      format.html { redirect_to agendas_url }
+      format.html { redirect_to alterar_deletar_agendas_url }
       format.json { head :no_content }
     end
   end
@@ -99,5 +108,12 @@ class AgendasController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @agendas }
   end
+  end
+  
+  def consultar
+    data = params[:data].to_date
+    puts data
+    @agendas = Agenda.where('data = ?', data)
+    render 'index'
   end
 end
