@@ -4,6 +4,8 @@ class AgendasController < ApplicationController
   before_filter :authenticate_usuario!
   
   def index
+    @parceiros = Parceiro.all 
+    
     @agendas = Agenda.order('data asc')
 
     respond_to do |format|
@@ -13,6 +15,8 @@ class AgendasController < ApplicationController
   end
   
   def alterar_deletar
+    @parceiros = Parceiro.all 
+    
     @agendas = Agenda.order('data asc')
 
     respond_to do |format|
@@ -24,6 +28,8 @@ class AgendasController < ApplicationController
   # GET /agendas/1
   # GET /agendas/1.json
   def show
+    @parceiros = Parceiro.all 
+    
     @agenda = Agenda.find(params[:id])
 
     respond_to do |format|
@@ -35,6 +41,8 @@ class AgendasController < ApplicationController
   # GET /agendas/new
   # GET /agendas/new.json
   def new
+    @parceiros = Parceiro.all 
+    
     @agenda = Agenda.new
 
     respond_to do |format|
@@ -45,12 +53,16 @@ class AgendasController < ApplicationController
 
   # GET /agendas/1/edit
   def edit
+    @parceiros = Parceiro.all 
+    
     @agenda = Agenda.find(params[:id])
   end
 
   # POST /agendas
   # POST /agendas.json
   def create
+    @parceiros = Parceiro.all 
+    
     @agenda = Agenda.new(params[:agenda])
 
     respond_to do |format|
@@ -67,6 +79,8 @@ class AgendasController < ApplicationController
   # PUT /agendas/1
   # PUT /agendas/1.json
   def update
+    @parceiros = Parceiro.all 
+    
     @agenda = Agenda.find(params[:id])
 
     respond_to do |format|
@@ -83,6 +97,8 @@ class AgendasController < ApplicationController
   # DELETE /agendas/1
   # DELETE /agendas/1.json
   def destroy
+    @parceiros = Parceiro.all 
+    
     @agenda = Agenda.find(params[:id])
     @agenda.destroy
 
@@ -93,6 +109,8 @@ class AgendasController < ApplicationController
   end
   
   def pagode
+    @parceiros = Parceiro.all 
+    
     @agendas = Agenda.where(:tipo => 'Multishow').order('data asc')
 
     respond_to do |format|
@@ -102,6 +120,8 @@ class AgendasController < ApplicationController
   end
   
   def semmarra
+    @parceiros = Parceiro.all 
+    
     @agendas = Agenda.where(:tipo => 'Sem Marra').order('data asc')
 
     respond_to do |format|
@@ -110,7 +130,13 @@ class AgendasController < ApplicationController
   end
   end
   
+  def opcao
+    @parceiros = Parceiro.all
+  end
+  
   def consultar
+    @parceiros = Parceiro.all 
+    
     data = params[:data].to_date
     puts data
     @agendas = Agenda.where('data = ?', data)

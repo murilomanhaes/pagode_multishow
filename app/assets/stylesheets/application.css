@@ -121,7 +121,7 @@ h2 b{
  
  #consulta {
   float: left;
-  width: 410px;
+  width: 450px;
   height: 25px;
   margin-left: 225px;
   margin-bottom: 20px;
@@ -293,6 +293,16 @@ h2 b{
 	width: 332px;
 }
 
+/*configuraçoes para parceiros*/
+
+#parceiroadmin {
+	float: left;
+	width: 870px;
+	min-height: 300px; 
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
 #parceiro {
 	float: right;
 	width: 370px;
@@ -301,6 +311,32 @@ h2 b{
 	float: left;
 	margin-left: 2px;
 	width: 340px;
+}
+
+#relatorioparceiro {
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  margin-left: 80px;
+} 
+
+#relatorioparceiro table {
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  border:1px solid #4F4F4F;
+}
+
+#relatorioparceiro th {
+  text-align: center;
+  background-color: #EEE9E9;
+  border:1px solid #4F4F4F;
+}
+
+#relatorioparceiro td {
+  text-align: center;
+  padding: 7px;
+  border:1px solid #4F4F4F;
 }
 
 
@@ -344,6 +380,47 @@ h2 b{
   margin-left: 25px;
   margin-top: 20px;
 }
+
+
+#apoio {
+	float: left;
+	width: 315px;
+}
+
+#apoio h2{
+	text-align: center;
+}
+
+#apoio table{
+	float: left;
+	margin-left: 50px;
+}
+
+#apoio h2 {
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-style:italic;
+
+	color:#862e06;
+}
+#apoio h2 b{
+	color:#341c12;
+}
+
+
+#evento {
+	float: right;
+	width: 510px;
+}
+
+#evento img{
+	width: 500px;
+	height: 500px;
+	border: 5px solid white;
+}
+
 
 
 

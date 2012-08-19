@@ -1,4 +1,4 @@
-class HistoriaController < ApplicationController 
+class HistoriasController < ApplicationController 
 
   def index 
 

@@ -1,0 +1,28 @@
+<div id="parceiroadmin">
+  <h2><b>Parceiros</b> cadastrados</h2><br/>
+
+  <div id = "relatorioagenda">
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Endereço</th>
+        <th></th>
+      </tr>
+      
+
+    <% @parceiros.each do |parceiro| %>
+      <tr>
+        <td><%= parceiro.nome %></td>
+        <td><%= parceiro.endereco %></td>
+        <td class="tabelatamanho"><%= link_to '', edit_parceiro_path(parceiro), :class=> "editar"%>
+            <%= link_to '', parceiro, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %>
+        </td>
+      </tr>
+    <% end %>
+    </table>
+   
+   </div>
+    
+</div>
+
+   <%= link_to '', alterar_deletar_administracoes_path, :class => "voltar"%>

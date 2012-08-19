@@ -1,0 +1,21 @@
+<div id="formulario">
+  <%= semantic_form_for(@parceiro) do |f| %>
+
+  <fieldset class="dados_fieldset">
+    <legend> Dados parceiro</legend>
+    <br>
+
+    <%= f.input :nome %>
+      
+    <%= f.input :endereco, label: "Endereço" %>
+        
+  </fieldset>
+   
+    
+    
+  <br><br>
+
+   <%= f.submit 'Salvar' %>
+<% end %>
+
+</div>

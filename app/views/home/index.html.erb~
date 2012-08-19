@@ -8,6 +8,25 @@
 	
 	<% else %>
 	
+	  <div id="apoio">
+						<h2><b>Apoio</b> 2012</h2>
+						
+						<table>
+							<tr>
+							  <td><img id="img_noticia" src="assets/anuncie.png" border="2" alt="noticia" width="220px" height="250px"></td>
+							</tr>
+							<tr>
+							  <td id="txt_noticia">Anuncie aqui!!! - Entre em contato conosco</td>
+							</tr>
+							<tr>
+							  <td><input type="radio" name="op_noticia" value="1" onclick="javascript:mudarNoticia(this.value);" checked>
+							      <input type="radio" name="op_noticia" value="2" onclick="javascript:mudarNoticia(this.value);">
+							      <input type="radio" name="op_noticia" value="3" onclick="javascript:mudarNoticia(this.value);">
+							      <input type="radio" name="op_noticia" value="4" onclick="javascript:mudarNoticia(this.value);"></td>
+							</tr>
+						</table>
+		</div>
+	
 	
 	<% end %>
 

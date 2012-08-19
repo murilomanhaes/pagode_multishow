@@ -112,3 +112,4 @@ function mascaraCEP(elemento, evento) {
 
    return(evento.charCode >=zero && evento.charCode <=nove);
 }
+

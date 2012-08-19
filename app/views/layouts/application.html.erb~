@@ -5,6 +5,37 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript">
+			setInterval("mudarNoticia('auto')", 5000);
+
+			var texto_noticias = new Array();
+			texto_noticias[0] = "aqui vc coloca as noticias";
+			texto_noticias[1] = "Apoio Total Multifestas.";
+			texto_noticias[2] = "Apoio Total Multipeças.";
+			texto_noticias[3] = "J.Pessanha Vidraçaria - Tudo em vidro para sua obra.";	
+			texto_noticias[4] = "Anuncie aqui!!! - Entre em contato conosco.";
+
+			var imagem_noticias = new Array();
+			imagem_noticias[0] = "aqui vc coloca as imagens";
+			imagem_noticias[1] = "/assets/multifestas.jpg";
+			imagem_noticias[2] = "/assets/multipecas.jpg";
+			imagem_noticias[3] = "/assets/pessanha.jpg";
+			imagem_noticias[4] = "/assets/anuncie.png";
+			
+			function mudarNoticia( noticia ) {
+			if ( noticia == "auto" ) {
+			for ( i=0; i<document.getElementsByName('op_noticia').length; i++ ) {
+			if ( document.getElementsByName('op_noticia')[i].checked ) {
+			noticia = parseInt(document.getElementsByName('op_noticia')[i].value) + 1;
+			}
+			}
+			if ( noticia > texto_noticias.length-1 ) noticia = 1;
+			document.getElementsByName('op_noticia')[noticia-1].checked = true;
+			}
+			document.getElementById("img_noticia").src = imagem_noticias[noticia];
+			document.getElementById("txt_noticia").innerHTML = texto_noticias[noticia];
+			}
+	  </script>		
 </head>
 <body>
 
@@ -72,6 +103,7 @@
     
     </div>
     
+    <% if usuario_signed_in? %>
     
     <div id="rodape">
 			<div id="rodape-cima">
@@ -86,6 +118,12 @@
 					
 					<div id="parceiro">
 						<h2><b>Parceiro</b> 2012</h2>
+						
+						<% @parceiros.each do |parceiro| %>
+              <ul>
+			          <li><a><b><%= link_to parceiro.nome, parceiro.endereco, :target => "_blank"%></b></a></li>
+              </ul>
+            <% end %> 
 							
 							
  					</div>
@@ -96,6 +134,7 @@
 			</div>
 		</div>
 		
+		<% end %>
 		
 		<div id="rodape2">
 		
