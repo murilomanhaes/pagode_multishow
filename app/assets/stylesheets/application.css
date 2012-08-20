@@ -309,8 +309,16 @@ h2 b{
 }
 #parceiro ul {
 	float: left;
+	margin-top: -15px;
 	margin-left: 2px;
 	width: 340px;
+}
+
+#parceiro li {
+	margin: 0px;
+	padding: 0px 0px 5px 20px;
+	list-style: none;
+	background: 0px 3px url("/assets/bullet.gif") no-repeat;
 }
 
 #relatorioparceiro {
@@ -339,6 +347,29 @@ h2 b{
   border:1px solid #4F4F4F;
 }
 
+.cadparceiro {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/cadparceiro.gif") no-repeat 0 0;
+ }
+ 
+ .alterarparceiro {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/alterarparceiro.gif") no-repeat 0 0;
+ }
+
+.consultarparceiro{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/consultarparceiro.gif") no-repeat 0 0;
+ }
 
 
 /*Configurações para o segundo rodape*/

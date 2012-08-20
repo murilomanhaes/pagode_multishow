@@ -118,10 +118,11 @@
 					
 					<div id="parceiro">
 						<h2><b>Parceiro</b> 2012</h2>
+						<br><br>
 						
 						<% @parceiros.each do |parceiro| %>
-              <ul>
-			          <li><a><b><%= link_to parceiro.nome, parceiro.endereco, :target => "_blank"%></b></a></li>
+						  <ul>
+			          <li><%= link_to parceiro.nome, parceiro.endereco, :target => "_blank"%></li>
               </ul>
             <% end %> 
 							
