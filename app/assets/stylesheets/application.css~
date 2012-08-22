@@ -852,6 +852,11 @@ h2 b{
 	margin-top: 20px;
 }
 
+.novorecado {
+  margin-top: 100px;
+  margin-left: 15px;
+}
+
 
 .datanovidade {
   float: right;

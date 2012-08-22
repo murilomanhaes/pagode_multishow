@@ -25,10 +25,17 @@
       </tr>
     <% end %>
     </table>
+    
+    <br><br>    
+    <br><br>    
+    <br><br>    
+    <br><br>    
+    <br><br>        
+    <%= link_to 'Novo Recado', new_recado_path, :class => "novorecado" %>
       
    </div>
         
 </div>
-<%= link_to 'New Recado', new_recado_path %>
+
 
 
