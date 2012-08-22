@@ -1,0 +1,30 @@
+<div id="novidadeadmin">
+  <h2><b>Notícias</b> cadastradas</h2><br/>
+
+  <div id = "relatorionovidade">
+    <table>
+      <tr>
+        <th>Título</th>
+        <th>Resumo</th>
+        <th>Data</th>
+        <th></th>
+      </tr>
+      
+
+    <% @novidades.each do |novidade| %>
+      <tr>
+        <td><%= novidade.titulo %></td>
+        <td><%= novidade.resumo %></td>
+        <td><%= novidade.data.to_s_br %></td>
+        <td class="tabelatamanho"><%= link_to '', edit_novidade_path(novidade), :class=> "editar"%>
+            <%= link_to '', novidade, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %>
+        </td>
+      </tr>
+    <% end %>
+    </table>
+   
+   </div>
+    
+</div>
+
+   <%= link_to '', alterar_deletar_administracoes_path, :class => "voltar"%>

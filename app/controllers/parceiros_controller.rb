@@ -1,8 +1,11 @@
 class ParceirosController < ApplicationController
-  # GET /parceiros
-  # GET /parceiros.json
+  
+  load_and_authorize_resource
+  before_filter :authenticate_usuario!
+  
   def index
     @parceiros = Parceiro.all
+    @novidades = Novidade.order('created_at').last(6) 
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,6 +17,7 @@ class ParceirosController < ApplicationController
   # GET /parceiros/1.json
   def show
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiro = Parceiro.find(params[:id])
 
@@ -27,6 +31,7 @@ class ParceirosController < ApplicationController
   # GET /parceiros/new.json
   def new
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiro = Parceiro.new
 
@@ -39,6 +44,7 @@ class ParceirosController < ApplicationController
   # GET /parceiros/1/edit
   def edit
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiro = Parceiro.find(params[:id])
   end
@@ -47,6 +53,7 @@ class ParceirosController < ApplicationController
   # POST /parceiros.json
   def create
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiro = Parceiro.new(params[:parceiro])
 
@@ -65,6 +72,7 @@ class ParceirosController < ApplicationController
   # PUT /parceiros/1.json
   def update
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiro = Parceiro.find(params[:id])
 
@@ -83,18 +91,20 @@ class ParceirosController < ApplicationController
   # DELETE /parceiros/1.json
   def destroy
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiro = Parceiro.find(params[:id])
     @parceiro.destroy
 
     respond_to do |format|
-      format.html { redirect_to parceiros_url }
+      format.html { redirect_to alterar_deletar_parceiros_url }
       format.json { head :no_content }
     end
   end
   
   def alterar_deletar
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @parceiros = Parceiro.order('nome asc')
 
@@ -106,6 +116,7 @@ class ParceirosController < ApplicationController
   
   def consultar
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     nome = params[:nome]
     @parceiros = Parceiro.where('UPPER(nome) LIKE ?', "%#{nome.upcase}%")

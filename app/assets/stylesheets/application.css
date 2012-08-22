@@ -41,6 +41,14 @@ h2 b{
 	clear: both;
 }
 
+.more {
+  float: right;
+  width: 68px;
+  height: 14px;
+  margin-right: 10px;
+  background-image:url("/assets/more.gif");
+}
+
 
 /*Configurações para a estrutura toda do site*/
 
@@ -281,6 +289,15 @@ h2 b{
 	padding: 13px 21px 12px 28px;
 }
 
+/*Configuracoes para a novidade*/
+
+#novidadeadmin {
+	float: left;
+	width: 870px;
+	min-height: 300px; 
+	margin-left: 25px;
+	margin-top: 20px;
+}
 
 #noticia {
 	float: left;
@@ -290,8 +307,74 @@ h2 b{
 #noticia ul {
 	float: left;
 	margin-left: 2px;
-	width: 332px;
+	width: 342px;
+	border-bottom: #341c12 1px dashed;
 }
+
+#noticia li {
+	margin: 0px;
+	padding: 0px 0px 5px 20px;
+	list-style: none;
+	background: 0px 3px url("/assets/bullet.gif") no-repeat;
+}
+
+.datanovidade {
+  float: right;
+  margin-left: 40px;
+	font-size:10px;  
+} 
+
+#relatorionovidade {
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  margin-left: 80px;
+} 
+
+#relatorionovidade table {
+  float: left;
+  width: 700px;
+  min-height: 300px;
+  border:1px solid #4F4F4F;
+}
+
+#relatorionovidade th {
+  text-align: center;
+  background-color: #EEE9E9;
+  border:1px solid #4F4F4F;
+}
+
+#relatorionovidade td {
+  text-align: center;
+  padding: 7px;
+  border:1px solid #4F4F4F;
+}
+
+.cadnovidade {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/cadnoticia.gif") no-repeat 0 0;
+ }
+ 
+ .alterarnovidade {
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/alterarnoticia.gif") no-repeat 0 0;
+ }
+
+.consultarnovidade{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/consultarnoticia.gif") no-repeat 0 0;
+ }
+
+
 
 /*configuraçoes para parceiros*/
 

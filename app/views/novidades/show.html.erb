@@ -1,0 +1,19 @@
+<div id="formulario">
+
+  <h2><%= @novidade.titulo %></h2> 
+  
+  <p class="datanovidade">
+    <%= @novidade.data.to_s_br %>
+  </p></br>
+ 
+  <p>
+    <%= @novidade.conteudo %>
+  </p>
+  
+  <% if can? :manage, :all %>
+	  <li><a><%= link_to '', new_novidade_path, :class => "voltar"%></a></li>
+	<% else %>
+	  <li><a><%= link_to '', root_path, :class => "voltar" %></a></li>
+	<% end %>
+
+</div>

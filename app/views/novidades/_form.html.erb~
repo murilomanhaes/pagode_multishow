@@ -1,0 +1,28 @@
+<div id="formulario">
+  <%= semantic_form_for(@novidade) do |f| %>
+
+  <fieldset class="dados_fieldset">
+    <legend> Dados notícia</legend>
+    <br>
+        <%= f.input :titulo %>
+        
+        <%= f.input :resumo %>
+        
+        <%= f.input :conteudo, as: :text, input_html: opcoes_para_observacao %>
+        
+        <%= f.input :data, as: :string, input_html: opcoes_para_data %>
+        
+ </fieldset>
+   
+    
+    
+  <br><br>
+
+   <%= f.submit 'Salvar' %>
+<% end %>
+
+</div>
+
+ 
+ 
+  

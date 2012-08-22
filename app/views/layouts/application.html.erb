@@ -111,6 +111,18 @@
 				
 					<div id="noticia">
 						<h2><b>Notícias</b> 2012</h2><br/>
+						
+						<% @novidades.each do |novidade| %>
+              <ul>
+			          <li><a><%= novidade.titulo %></a><br>
+                    <%= novidade.resumo %> </br>   
+                    <%= link_to "", novidade , :class => "more"%><br>
+                  
+
+                </li>
+              </ul>
+                           
+            <% end %> 
 					
 			
 					</div>

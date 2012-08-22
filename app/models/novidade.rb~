@@ -1,0 +1,4 @@
+class Novidade < ActiveRecord::Base
+  
+  attr_accessible :conteudo, :data, :resumo, :titulo
+end

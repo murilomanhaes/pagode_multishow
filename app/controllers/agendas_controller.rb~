@@ -130,6 +130,9 @@ class AgendasController < ApplicationController
   end
   end
   
+  def opcao
+    @parceiros = Parceiro.all
+  end
   
   def consultar
     @parceiros = Parceiro.all 

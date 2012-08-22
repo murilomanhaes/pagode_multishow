@@ -1,0 +1,35 @@
+<div id="novidadeadmin">
+  <h2><b>Consultar e Relatório</b> notícia</h2><br/>
+  
+  <div id='consulta'> 
+   <%= form_tag consultar_novidades_path, method: :get do %>
+     <%= label_tag :titulo, 'Busca por título' %>
+     <%= text_field_tag :titulo %>
+     <%= submit_tag 'Buscar' %>
+   <% end %>
+  </div>
+
+
+  <div id = "relatorionovidade">
+    <table>
+      <tr>
+        <th>Título</th>
+        <th>Resumo</th>
+        <th>Data</th>
+      </tr>
+      
+
+    <% @novidades.each do |novidade| %>
+      <tr>
+        <td><%= novidade.titulo %></td>
+        <td><%= novidade.resumo %></td>
+        <td><%= novidade.data.to_s_br %></td>
+      </tr>
+    <% end %>
+    </table>
+   
+   </div>
+    
+</div>
+
+   <%= link_to '', consultar_relatorio_administracoes_path, :class => "voltar"%>

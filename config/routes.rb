@@ -1,5 +1,12 @@
 PagodeMultishow::Application.routes.draw do
   
+  resources :novidades do 
+    collection do
+      get :alterar_deletar
+      get :consultar
+    end
+  end
+
   resources :parceiros do
     collection do
       get :alterar_deletar

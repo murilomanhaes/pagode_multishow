@@ -1,6 +1,7 @@
 class LocaisController < ApplicationController 
 
   def index 
-
+    @parceiros = Parceiro.all 
+    @novidades = Novidade.all
 	end 
 end

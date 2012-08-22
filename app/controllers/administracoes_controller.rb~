@@ -1,17 +1,21 @@
 class AdministracoesController < ApplicationController
   def index
     @parceiros = Parceiro.all 
+    @novidades = Novidade.all
   end
   
   def alterar_deletar
     @parceiros = Parceiro.all 
+    @novidades = Novidade.all
   end
   
   def cadastrar
     @parceiros = Parceiro.all 
+    @novidades = Novidade.all
   end
   
-  def cosultar_relatorio
+  def consultar_relatorio
     @parceiros = Parceiro.all 
+    @novidades = Novidade.all
   end
 end
