@@ -10,6 +10,13 @@ class RecadosController < ApplicationController
     @recados = Recado.all
   end
   
+  def alterar_deletar
+    @parceiros = Parceiro.all
+    @novidades = Novidade.order('created_at').last(6)
+    
+    @recados = Recado.all
+  end
+   
   def index
     @parceiros = Parceiro.all
     @novidades = Novidade.order('created_at').last(6) 
@@ -106,8 +113,18 @@ class RecadosController < ApplicationController
     @recado.destroy
 
     respond_to do |format|
-      format.html { redirect_to recados_url }
+      format.html { redirect_to alterar_deletar_recados_url }
       format.json { head :no_content }
     end
+  end
+  
+  def consultar
+    @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
+    
+    data = params[:data].to_date
+    puts data
+    @recados = Recado.where('data = ?', data)
+    render 'index'
   end
 end

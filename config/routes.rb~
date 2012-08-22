@@ -1,6 +1,11 @@
 PagodeMultishow::Application.routes.draw do
   
-  resources :recados
+  resources :recados do 
+    collection do
+      get :listar
+      get :consultar
+    end
+  end
 
   resources :novidades do 
     collection do

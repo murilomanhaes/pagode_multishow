@@ -1,14 +1,5 @@
 <div id="novidadeadmin">
-  <h2><b>Consultar e Relatório</b> recado</h2><br/>
-  
-  <div id='consulta'> 
-   <%= form_tag consultar_recados_path, method: :get do %>
-     <%= label_tag :data, 'Busca por data' %>
-     <%= text_field_tag :data %>
-     <%= submit_tag 'Buscar' %>
-   <% end %>
-  </div>
-
+  <h2><b>Recados</b> cadastrados</h2><br/>
 
   <div id = "relatorionovidade">
     <table>
@@ -16,6 +7,7 @@
         <th>Nome</th>
         <th>Recado</th>
         <th>Data</th>
+        <th></th>
       </tr>
       
 
@@ -24,6 +16,9 @@
         <td><%= recado.usuario.nome %></td>
         <td><%= recado.recado %></td>
         <td><%= recado.data.to_s_br %></td>
+        <td class="tabelatamanho"><%= link_to '', edit_recado_path(recado), :class=> "editar"%>
+            <%= link_to '', recado, confirm: 'Deseja realmente apagar?', method: :delete, :class=>"deletar" %>
+        </td>
       </tr>
     <% end %>
     </table>
@@ -32,4 +27,4 @@
     
 </div>
 
-   <%= link_to '', consultar_relatorio_administracoes_path, :class => "voltar"%>
+   <%= link_to '', alterar_deletar_administracoes_path, :class => "voltar"%>

@@ -6,7 +6,10 @@
     
   </div>
   
-  <%= link_to "", listar_recados_path, :class => "voltar" %>
-    
+  <% if can? :manage, :all %>
+	  <%= link_to '', cadastrar_administracoes_path, :class => "voltar"%></a></li>
+	<% else %>
+	  <%= link_to '', listar_recados_path, :class => "voltar" %></a></li>
+	<% end %>
 </div>
 

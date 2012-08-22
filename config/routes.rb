@@ -3,6 +3,8 @@ PagodeMultishow::Application.routes.draw do
   resources :recados do 
     collection do
       get :listar
+      get :consultar
+      get :alterar_deletar
     end
   end
 
