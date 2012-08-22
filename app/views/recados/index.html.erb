@@ -1,0 +1,27 @@
+<h1>Listing recados</h1>
+
+<table>
+  <tr>
+    <th>Usuario</th>
+    <th>Recado</th>
+    <th>Data</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @recados.each do |recado| %>
+  <tr>
+    <td><%= recado.usuario_id %></td>
+    <td><%= recado.recado %></td>
+    <td><%= recado.data %></td>
+    <td><%= link_to 'Show', recado %></td>
+    <td><%= link_to 'Edit', edit_recado_path(recado) %></td>
+    <td><%= link_to 'Destroy', recado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recado', new_recado_path %>

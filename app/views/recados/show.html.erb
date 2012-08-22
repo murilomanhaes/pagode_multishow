@@ -1,0 +1,23 @@
+<div id="formulario">
+  <p>
+    <b>Data:</b>
+    <%= @recado.data.to_s_br %>
+  </p>
+  
+  <p>
+    <b>Nome:</b>
+    <%= @recado.usuario.nome %>
+  </p>
+
+  <p>
+    <b>recado:</b>
+    <%= @recado.recado %>
+  </p>
+
+  <% if can? :manage, :all %>
+	  <li><a><%= link_to '', new_recado_path, :class => "voltar"%></a></li>
+	<% else %>
+	  <li><a><%= link_to '', listar_recados_path, :class => "voltar" %></a></li>
+	<% end %>
+</div>
+
