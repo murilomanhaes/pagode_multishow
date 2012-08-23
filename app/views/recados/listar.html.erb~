@@ -1,7 +1,7 @@
-<div id="novidadeadmin">
+<div id="recadoadmin">
   <h2><b>Mural de </b> Recados</h2><br/>
   
-  <div id = "relatorionovidade">
+  <div id = "relatoriorecado">
     <table>
       <tr>
         <th>Nome</th>
@@ -30,8 +30,9 @@
     <br><br>    
     <br><br>    
     <br><br>    
-    <br><br>        
+
     <%= link_to 'Novo Recado', new_recado_path, :class => "novorecado" %>
+    <%= link_to 'Ver todos', ver_todas_recados_path, :class => "ver_todas" %>
       
    </div>
         

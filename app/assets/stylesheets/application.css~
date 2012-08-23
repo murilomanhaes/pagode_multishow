@@ -297,6 +297,7 @@ h2 b{
 	min-height: 300px; 
 	margin-left: 25px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #noticia {
@@ -493,6 +494,7 @@ h2 b{
   min-height: 300px;
   margin-left: 25px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -651,6 +653,7 @@ h2 b{
   min-height: 300px;
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .logos{
@@ -675,6 +678,7 @@ h2 b{
 	min-height: 300px; 
 	margin-left: 20px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #local iframe{
@@ -695,6 +699,7 @@ h2 b{
 	min-height: 300px; 
 	margin-left: 25px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #agenda .dadosagenda{
@@ -814,6 +819,7 @@ h2 b{
   height: 200px;
   margin-left: 5px;
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .menucadastrar {
@@ -850,13 +856,18 @@ h2 b{
 	min-height: 300px; 
 	margin-left: 25px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .novorecado {
-  margin-top: 100px;
+  float: left;
   margin-left: 15px;
 }
 
+.ver_todas {
+  float: right;
+  margin-right: 15px;
+}
 
 .datanovidade {
   float: right;

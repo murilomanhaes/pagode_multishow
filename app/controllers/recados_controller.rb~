@@ -3,11 +3,18 @@ class RecadosController < ApplicationController
   load_and_authorize_resource
   before_filter :authenticate_usuario!
   
-  def listar
+  def ver_todas
     @parceiros = Parceiro.all
     @novidades = Novidade.order('created_at').last(6) 
     
     @recados = Recado.all
+  end
+  
+  def listar
+    @parceiros = Parceiro.all
+    @novidades = Novidade.order('created_at').last(6) 
+    
+    @recados = Recado.order('created_at').last(10)
   end
   
   def alterar_deletar

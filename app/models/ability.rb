@@ -7,7 +7,7 @@ class Ability
     if user.tipo == "Administrador"
 		  can :manage, :all
 		else
-		  can [:new, :create, :listar], Recado
+		  can [:new, :create, :listar, :ver_todas], Recado
 		  can [:opcao, :pagode, :semmarra], Agenda
 	    can :show, :all 
 	  end

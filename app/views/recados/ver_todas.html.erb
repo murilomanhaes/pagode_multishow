@@ -1,5 +1,5 @@
 <div id="recadoadmin">
-  <h2><b>Mural de </b> Recados</h2><br/>
+  <h2><b>Todos os </b> Recados</h2><br/>
   
   <div id = "relatoriorecado">
     <table>
@@ -13,11 +13,7 @@
     <% @recados.each do |recado| %>
       <tr>
         <td class="tabelatamanho">
-        <% if can? :manage, :all %>
-          <%= link_to recado.usuario.nome, usuario_path(recado.usuario) %>
-        <% else %>
           <%= recado.usuario.nome %>
-        <% end %>
         </td>
         
         <td><%= recado.recado %></td>
@@ -26,13 +22,8 @@
     <% end %>
     </table>
     
-    <br><br>    
-    <br><br>    
-    <br><br>    
-    <br><br>    
-
-    <%= link_to 'Novo Recado', new_recado_path, :class => "novorecado" %>
-    <%= link_to 'Ver todos', ver_todas_recados_path, :class => "ver_todas" %>
+    
+    <%= link_to '', listar_recados_path, :class => "voltar" %></a></li>
       
    </div>
         

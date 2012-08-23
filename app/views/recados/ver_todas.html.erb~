@@ -1,0 +1,33 @@
+<div id="novidadeadmin">
+  <h2><b>Todos os </b> Recados</h2><br/>
+  
+  <div id = "relatorionovidade">
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Recado</th>
+        <th>Data</th>
+      </tr>
+      
+
+    <% @recados.each do |recado| %>
+      <tr>
+        <td class="tabelatamanho">
+          <%= recado.usuario.nome %>
+        </td>
+        
+        <td><%= recado.recado %></td>
+        <td class="tabelatamanho"><%= recado.data.to_s_br %></td>
+      </tr>
+    <% end %>
+    </table>
+    
+    
+    <%= link_to '', listar_recados_path, :class => "voltar" %></a></li>
+      
+   </div>
+        
+</div>
+
+
+

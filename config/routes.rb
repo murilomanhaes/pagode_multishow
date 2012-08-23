@@ -5,6 +5,7 @@ PagodeMultishow::Application.routes.draw do
       get :listar
       get :consultar
       get :alterar_deletar
+      get :ver_todas
     end
   end
 
