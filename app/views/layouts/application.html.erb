@@ -67,9 +67,13 @@
 			<%= link_to "Recado", listar_recados_path %>
 
 			<% if usuario_signed_in? %>
-				<a class="lastchild" href="#">Contato</a> 
+			  <% if can? :manage, :all %>
+					  <%= link_to "Contato", admincontato_contatos_path, :class => "lastchild"%>
+					<% else %>
+  				  <%= link_to "Contato", new_contato_path, :class => "lastchild"%>
+				  <% end %>
 			<%else%>
-			  <a href="#">Contato</a>
+  				  <%= link_to "Contato", new_contato_path%>
 			  <%= link_to "Login", usuario_session_path %>
 			  <%= link_to "Cadastra-se", new_usuario_path, :class => "lastchild" %>
 			<% end %>

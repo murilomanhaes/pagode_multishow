@@ -64,9 +64,14 @@
 			<%= link_to "Agenda", opcao_agendas_path %>
 			<a href="#">Fotos</a>
 			<%= link_to "Local", locais_path %>
-			<%= link_to "Recado", recados_path %>
+			<%= link_to "Recado", listar_recados_path %>
 
 			<% if usuario_signed_in? %>
+			  <% if can? :manage, :all %>
+					  <%= link_to "Contato", admincontato_contatos_path, :class => "lastchild"%>
+					<% else %>
+  				  <%= link_to "Contato", new_contato_path, :class => "lastchild"%>
+				  <% end %>
 				<a class="lastchild" href="#">Contato</a> 
 			<%else%>
 			  <a href="#">Contato</a>

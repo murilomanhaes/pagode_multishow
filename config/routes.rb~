@@ -1,5 +1,7 @@
 PagodeMultishow::Application.routes.draw do
   
+  resources :contatos
+
   resources :recados do 
     collection do
       get :listar

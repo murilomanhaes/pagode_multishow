@@ -1,0 +1,9 @@
+class Contato < ActiveRecord::Base
+  validates :email, :mensagem, :nome, :telefone, presence: true
+
+  attr_accessible :email, :mensagem, :nome, :telefone
+  
+  def concluido?
+   	data_conclusao.present?
+  end
+end

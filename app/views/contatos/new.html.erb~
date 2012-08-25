@@ -1,0 +1,10 @@
+<div id="home">
+  <div id="dadosformulario">
+    <h2><b>Contato</b> Pagode Multishow</h2><br>
+	  <strong>Preencha o formulário abaixo para entrar em contato com o Pagode Multishow.</strong><br><br>
+
+    <%= render 'form' %>
+    
+  </div>
+</div>
+

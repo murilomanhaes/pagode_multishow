@@ -1,0 +1,28 @@
+<div id="home">
+
+<h2><b>Concluir</b> Contato</h2><br/>
+
+  <% for contato in @contatos %>
+      
+    <div id = "relatoriocontato">
+      <% if contato.concluido? %>
+      
+      <% else %>
+        <div class="linharealatoriocontato">
+          <h3><%= contato.nome %></h3>     
+          <p><%= contato.email %></p>
+          <p><%= contato.telefone %></p><br>
+          <p><%= contato.mensagem %></p>
+          
+            <div id = "botoesrelatorio">
+              <%= link_to 'Concluir', concluir_contato_path(contato) %>
+            </div>
+        </div>
+      <%end%>
+    </div>
+ <% end %>
+ 
+</div>
+
+<%= link_to '', admincontato_contatos_path, :class => "voltar"%>
+

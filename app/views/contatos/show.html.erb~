@@ -1,0 +1,43 @@
+<div id="formulario">
+<p>
+  <b>Nome:</b>
+  <%= @contato.nome %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @contato.email %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @contato.telefone %>
+</p>
+
+<p>
+  <b>Mensagem:</b>
+  <%= @contato.mensagem %>
+</p>
+
+<% if can? :manage, :all %>
+    <p>
+      <b>Data conclusao:</b>
+      <%= @contato.data_conclusao.to_s_br %>
+    </p>
+
+    <p>
+      <b>Conclusao:</b>
+      <%= @contato.conclusao %>
+    </p>
+    
+    <br><br>
+    
+	  <li><a><%= link_to '', contatos_path, :class => "voltar" %></a></li>
+	<% else %>
+	  
+	  <br><br>
+	  <li><a><%= link_to '', root_path, :class => "voltar" %></a></li>
+	<% end %>
+
+</div>
+
