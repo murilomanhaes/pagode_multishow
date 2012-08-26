@@ -963,4 +963,19 @@ h2 b{
 	font-size:10px;  
 } 
 
+.concluircontato{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 200px;
+  background: url("/assets/concluircontato.gif") no-repeat 0 0;
+ }
+ 
+ .concluidoscontato{
+  float: left;
+  width: 170px;
+  height: 100px;
+  margin-left: 40px;
+  background: url("/assets/concluidoscontato.gif") no-repeat 0 0;
+ }
 

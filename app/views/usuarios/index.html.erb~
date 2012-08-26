@@ -4,9 +4,9 @@
   <div id = "relatoriorecado">
      <% @usuarios.each do |usuario| %>
         <% if can? :manage, :all %>
-         <p> <%= usuario.id %> - <%= link_to usuario.nome, usuario_path(usuario) %></p>
+          <%= usuario.id %> - <%= link_to usuario.nome, usuario_path(usuario) %>
         <% else %>
-          <p> <%= usuario.id %> - <%= usuario.nome %></p>
+          <%= usuario.id %> - <%= usuario.nome %></p>
         <% end %>
      <% end%>
   </div>
