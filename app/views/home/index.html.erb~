@@ -26,6 +26,12 @@
 							</tr>
 						</table>
 		</div>
+		
+		<div id="evento">
+			
+			<img src="/assets/sem marra.jpg"/>
+		
+		</div>
 	
 	
 	<% end %>

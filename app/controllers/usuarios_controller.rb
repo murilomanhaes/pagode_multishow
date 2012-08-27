@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
  
+  load_and_authorize_resource :only => [:index, :edit, :delete]  
  
   def index
     @parceiros = Parceiro.all 

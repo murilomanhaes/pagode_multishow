@@ -6,7 +6,7 @@
         <% if can? :manage, :all %>
          <p> <%= usuario.id %> - <%= link_to usuario.nome, usuario_path(usuario) %></p>
         <% else %>
-          <p> <%= usuario.id %> - <%= usuario.nome %></p>
+
         <% end %>
      <% end%>
   </div>

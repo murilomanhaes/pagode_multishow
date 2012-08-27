@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
  
+  load_and_authorize_resource :only => [:index, :edit, :delete]  
  
   def index
     @parceiros = Parceiro.all 
@@ -44,7 +45,7 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1/edit
   def edit
     @parceiros = Parceiro.all 
-    @novidades = Novidade.all
+    @novidades = Novidade.order('created_at').last(6) 
     
     @usuario = Usuario.find(params[:id])
   end
@@ -53,7 +54,7 @@ class UsuariosController < ApplicationController
   # POST /usuarios.json
   def create
     @parceiros = Parceiro.all
-    @novidades = Novidade.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @usuario = Usuario.new(params[:usuario])
 
@@ -72,7 +73,7 @@ class UsuariosController < ApplicationController
   # PUT /usuarios/1.json
   def update
     @parceiros = Parceiro.all 
-    @novidades = Novidade.all
+    @novidades = Novidade.order('created_at').last(6) 
     
     @usuario = Usuario.find(params[:id])
 
@@ -91,7 +92,7 @@ class UsuariosController < ApplicationController
   # DELETE /usuarios/1.json
   def destroy
     @parceiros = Parceiro.all 
-    @novidades = Novidade.all
+    @novidades = Novidade.order('created_at').last(6) 
     
     @usuario = Usuario.find(params[:id])
     @usuario.destroy

@@ -356,7 +356,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/cadnoticia.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadnoticia.gif") no-repeat 0 0;
  }
  
  .alterarnovidade {
@@ -364,7 +364,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/alterarnoticia.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterarnoticia.gif") no-repeat 0 0;
  }
 
 .consultarnovidade{
@@ -372,7 +372,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/consultarnoticia.gif") no-repeat 0 0;
+  background: url("/assets/admin/consultarnoticia.gif") no-repeat 0 0;
  }
 
 
@@ -436,7 +436,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/cadparceiro.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadparceiro.gif") no-repeat 0 0;
  }
  
  .alterarparceiro {
@@ -444,7 +444,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/alterarparceiro.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterarparceiro.gif") no-repeat 0 0;
  }
 
 .consultarparceiro{
@@ -452,7 +452,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/consultarparceiro.gif") no-repeat 0 0;
+  background: url("/assets/admin/consultarparceiro.gif") no-repeat 0 0;
  }
 
 
@@ -788,7 +788,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 20px;
-  background: url("/assets/cadagenda.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadagenda.gif") no-repeat 0 0;
  }
  
  .alteraragenda {
@@ -796,7 +796,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 20px;
-  background: url("/assets/alteraroudeletaragenda.gif") no-repeat 0 0;
+  background: url("/assets/admin/alteraroudeletaragenda.gif") no-repeat 0 0;
  }
 
 .consultaragenda {
@@ -804,7 +804,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 20px;
-  background: url("/assets/consultarerelatorioagenda.gif") no-repeat 0 0;
+  background: url("/assets/admin/consultarerelatorioagenda.gif") no-repeat 0 0;
  }
 
 
@@ -827,7 +827,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/cadastrar.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadastrar.gif") no-repeat 0 0;
  }
  
  .menualterar {
@@ -835,7 +835,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 120px;
-  background: url("/assets/alterar.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterar.gif") no-repeat 0 0;
  }
  
  .menuconsultar {
@@ -843,7 +843,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/consulatarerelatorio.gif") no-repeat 0 0;
+  background: url("/assets/admin/consulatarerelatorio.gif") no-repeat 0 0;
  }
 
 
@@ -906,7 +906,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/cadrecado.gif") no-repeat 0 0;
+  background: url("/assets/admin/cadrecado.gif") no-repeat 0 0;
  }
  
  .alterarrecado {
@@ -914,7 +914,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/alterarrecado.gif") no-repeat 0 0;
+  background: url("/assets/admin/alterarrecado.gif") no-repeat 0 0;
  }
 
 .consultarrecado{
@@ -922,7 +922,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/consultarrecado.gif") no-repeat 0 0;
+  background: url("/assets/admin/consultarrecado.gif") no-repeat 0 0;
  }
 
 
@@ -968,7 +968,7 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 200px;
-  background: url("/assets/concluircontato.gif") no-repeat 0 0;
+  background: url("/assets/admin/concluircontato.gif") no-repeat 0 0;
  }
  
  .concluidoscontato{
@@ -976,6 +976,6 @@ h2 b{
   width: 170px;
   height: 100px;
   margin-left: 40px;
-  background: url("/assets/concluidoscontato.gif") no-repeat 0 0;
+  background: url("/assets/admin/concluidoscontato.gif") no-repeat 0 0;
  }
 

@@ -72,9 +72,8 @@
 					<% else %>
   				  <%= link_to "Contato", new_contato_path, :class => "lastchild"%>
 				  <% end %>
-				<a class="lastchild" href="#">Contato</a> 
 			<%else%>
-			  <a href="#">Contato</a>
+  				  <%= link_to "Contato", new_contato_path%>
 			  <%= link_to "Login", usuario_session_path %>
 			  <%= link_to "Cadastra-se", new_usuario_path, :class => "lastchild" %>
 			<% end %>
