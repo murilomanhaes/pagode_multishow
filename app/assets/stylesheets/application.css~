@@ -978,4 +978,294 @@ h2 b{
   margin-left: 40px;
   background: url("/assets/admin/concluidoscontato.gif") no-repeat 0 0;
  }
+ 
+ 
+ 
+ 
+ /*configurações para a pagina de fotos*/
 
+#fotos{
+	float: left;
+	width: 870px;
+	min-height: 300px; 
+	margin-left: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+#fotos .conteinerfoto{
+	float: left;
+	display:block;
+	width:190px;
+	font-size:12px;
+	line-height:20px;
+	font-weight:normal;
+	background-color:#b39b7a;
+	border:#D6CEB3 solid 1px;
+	height: 200px;
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+.conteinerfoto img{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.conteinerfoto h6{
+	width: 180px;
+	font-size:12px;
+	line-height:20px;
+	font-weight:normal;
+	color:#ffffff;
+	margin-top: 5px;
+	margin-left:5px;
+	text-align: center;
+}
+
+a.fotolink:link {
+color: #ffffff;
+}
+
+a.fotolink:visited {
+color: #ffffff;
+}
+
+a.fotolink:hover {
+color: #ffffff;
+}
+
+a.fotolink:active {
+color: #ffffff;
+
+}
+
+
+/*Configurações para a galeria*/
+
+#gallery  {
+    float: left;
+	display:block;
+	width:735px;
+	font-size:12px;
+	line-height:20px;
+	font-weight:normal;
+	color:#5A5A5A;
+	min-height: 200px;
+	margin-top: 5px;
+	margin-right:0px;
+	margin-bottom: 5px;
+	margin-left: 45px;
+}
+
+#gallery ul{
+    list-style: none;
+	margin-left: 0px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#gallery ul li{
+	background: none;
+    display: inline;
+}
+
+#gallery ul img{
+    border: 5px solid #5A5A5A;
+	border-width: 5px 5px 5px;
+	margin-left: 10px;
+	margin-bottom:10px;
+}
+        #gallery ul a:hover img
+        {
+            border: 5px solid #D6CEB3;
+            border-width: 5px 5px 5px;
+            color: #fff;
+        }
+        #gallery ul a:hover
+        {
+            color: #fff;
+        }
+
+
+
+
+
+
+
+
+﻿#jquery-overlay
+{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+}
+#jquery-lightbox
+{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+
+}
+#jquery-lightbox a img
+{
+	border: none;
+}
+#lightbox-container-image-box-top
+{
+	width: 100%;
+}
+#lightbox-container-image-box-top-left
+{
+	width: 10%;
+	height: 1px;
+	position: relative;
+	margin: 0 auto;
+	float: left;
+	z-index: 10;
+	display: inline;
+	text-align: left;
+	
+}
+#lightbox-container-image-box-top-middle
+{
+	width: 80%;
+	padding-top: 5px;
+	height: 5px;
+	position: relative;
+	margin: 0 auto 0 0px;
+	float: left;
+	z-index: 5;
+	display: inline;
+}
+
+#lightbox-container-image-box-top-middle div.progress
+{
+	width: 80%;
+	padding-top: 5px;
+	height: 5px;
+	position: relative;
+	margin: 0 auto 0 0px;
+	float: left;
+	background-color: #e4e4e4;
+	z-index: 5;
+	display: inline;
+	
+}
+#lightbox-container-image-box-top-right
+{
+	width: 10%;
+	height: 1px;
+	position: relative;
+	margin: 0 auto;
+	float: right;
+	text-align: right;
+	z-index: 10;
+	display: inline;
+}
+#lightbox-container-image-box
+{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	
+}
+#lightbox-container-image
+{
+	height: 100%;
+	padding: 10px;
+	
+}
+#lightbox-loading
+{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav
+{
+	position: absolute;
+	top: 32px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav
+{
+	left: 0;
+}
+#lightbox-nav a
+{
+	outline: none;
+}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext
+{
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev
+{
+	left: 0;
+	float: left;
+}
+#lightbox-nav-btnNext
+{
+	right: 0;
+	float: right;
+}
+#lightbox-container-image-data-box
+{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+	text-align: left;
+}
+#lightbox-container-image-data #lightbox-image-details
+{
+	width: 70%;
+	float: left;
+	text-align: left;
+}
+#lightbox-image-details-caption
+{
+	font-weight: bold;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+#lightbox-image-details-currentNumber
+{
+	display: block;
+	clear: left;
+	padding-bottom: 1.0em;
+	display: inline;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+}
+#lightbox-image-details-previous-image, #lightbox-image-details-previous-text, #lightbox-image-details-next-image, #lightbox-image-details-next-text
+{
+	display: inline;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	cursor: pointer;
+	cursor: hand;
+}

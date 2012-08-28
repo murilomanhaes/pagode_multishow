@@ -1,5 +1,13 @@
 PagodeMultishow::Application.routes.draw do
   
+  resources :fotos do
+    collection do
+      get :wandinho
+      get :retorno2011
+      get :fotos2011
+    end
+  end
+  
   resources :contatos do
     member do
 		  get :concluir
