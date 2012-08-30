@@ -5,8 +5,20 @@
 	
 	
 	  <div class="conteinerfoto">
+	  	<img src="/assets/fotos/voce_pedi/foto_editada.jpg"/><br>
+	    <h6><%= link_to "Pagode Multishow - Você pede que eu do - Niver Dona Ivonete", voce_pedi_fotos_path %></h6>
+		</div>
+	
+	
+	  <div class="conteinerfoto">
+	  	<img src="/assets/fotos/retorno2012/foto_editada.jpg"/><br>
+	    <h6><%= link_to "Retorno do Pagode Multishow em 2012", retorno2012_fotos_path %></h6>
+		</div>
+		
+		
+	  <div class="conteinerfoto">
 	  	<img src="/assets/fotos/fotos2011/foto_editada.jpg"/><br>
-	    <h6><%= link_to "Melhores fotos de 2011 no Pagode Multishow", retorno2011_fotos_path %></h6>
+	    <h6><%= link_to "Melhores fotos de 2011 no Pagode Multishow", fotos2011_fotos_path %></h6>
 		</div>
 		
 		

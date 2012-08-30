@@ -5,6 +5,8 @@ PagodeMultishow::Application.routes.draw do
       get :wandinho
       get :retorno2011
       get :fotos2011
+      get :retorno2012
+      get :voce_pedi
     end
   end
   
