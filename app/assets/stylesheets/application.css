@@ -461,14 +461,14 @@ h2 b{
 #rodape2 {
 	float: left;
 	width: 760px;
-	margin-left: 60px;
+	margin-left: 80px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #rodape2 #direitosreservados{
 	float: left; 
-	width: 380px;
+	width: 420px;
 	height: 20px;
 }
 
@@ -476,7 +476,7 @@ h2 b{
 	float: left;
 	width: 280px;
 	height: 20px;
-	margin-left: 100px;
+	margin-left: 60px;
 }
 
 #desenvolvido a{

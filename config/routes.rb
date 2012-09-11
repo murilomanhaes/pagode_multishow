@@ -8,6 +8,7 @@ PagodeMultishow::Application.routes.draw do
       get :retorno2012
       get :voce_pedi
       get :pepinhoegil
+      get :dias_namorados
     end
   end
   

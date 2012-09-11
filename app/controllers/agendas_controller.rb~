@@ -5,6 +5,7 @@ class AgendasController < ApplicationController
   
   def index
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agendas = Agenda.order('data asc')
 
@@ -16,6 +17,7 @@ class AgendasController < ApplicationController
   
   def alterar_deletar
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agendas = Agenda.order('data asc')
 
@@ -29,6 +31,7 @@ class AgendasController < ApplicationController
   # GET /agendas/1.json
   def show
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agenda = Agenda.find(params[:id])
 
@@ -42,6 +45,7 @@ class AgendasController < ApplicationController
   # GET /agendas/new.json
   def new
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agenda = Agenda.new
 
@@ -54,6 +58,7 @@ class AgendasController < ApplicationController
   # GET /agendas/1/edit
   def edit
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agenda = Agenda.find(params[:id])
   end
@@ -62,6 +67,7 @@ class AgendasController < ApplicationController
   # POST /agendas.json
   def create
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agenda = Agenda.new(params[:agenda])
 
@@ -80,6 +86,7 @@ class AgendasController < ApplicationController
   # PUT /agendas/1.json
   def update
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agenda = Agenda.find(params[:id])
 
@@ -98,6 +105,7 @@ class AgendasController < ApplicationController
   # DELETE /agendas/1.json
   def destroy
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agenda = Agenda.find(params[:id])
     @agenda.destroy
@@ -110,6 +118,7 @@ class AgendasController < ApplicationController
   
   def pagode
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agendas = Agenda.where(:tipo => 'Multishow').order('data asc')
 
@@ -121,6 +130,7 @@ class AgendasController < ApplicationController
   
   def semmarra
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     @agendas = Agenda.where(:tipo => 'Sem Marra').order('data asc')
 
@@ -132,10 +142,12 @@ class AgendasController < ApplicationController
   
   def opcao
     @parceiros = Parceiro.all
+    @novidades = Novidade.order('created_at').last(6) 
   end
   
   def consultar
     @parceiros = Parceiro.all 
+    @novidades = Novidade.order('created_at').last(6) 
     
     data = params[:data].to_date
     puts data

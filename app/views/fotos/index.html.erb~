@@ -5,7 +5,7 @@
 	
 	  <div class="conteinerfoto">
 	  	<img src="/assets/fotos/pepinhoegil/foto_editada.jpg"/><br>
-	    <h6><%= link_to "Pagode Multishow - Você pede que eu do - Niver Dona Ivonete", pepinhoegil_fotos_path %></h6>
+	    <h6><%= link_to "Pepinho, Gil Paixão, Sem marra e Dj Tindale - Pagode Multishow", pepinhoegil_fotos_path %></h6>
 		</div>
 	  
 	  <div class="conteinerfoto">
