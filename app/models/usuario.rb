@@ -13,5 +13,5 @@ class Usuario < ActiveRecord::Base
    presence: true
    
    validates :email, format:/^.+\@.+\..+$/
-      
+   validates :email, uniqueness:true
 end

@@ -84,10 +84,10 @@
             containerBorderSize: 10,
             containerResizeSpeed: 500,
             // Configuration related to texts in caption. For example: Image 2 of 8. You can alter either "Image" and "of" texts.
-            txtImage: 'Image',
-            txtOf: 'of',
-            txtPrev: '&nbsp;Previous',
-            txtNext: '&nbsp;Next',
+            txtImage: 'Imagem',
+            txtOf: 'de',
+            txtPrev: '&nbsp;Anterior',
+            txtNext: '&nbsp;Próxima',
             // Configuration related to keyboard navigation
             keyToClose: 'c',
             keyToPrev: 'p',
@@ -97,7 +97,7 @@
             // Don´t alter these variables in any way
             step: 0,
             imageArray: [],
-            slideShow: 'start',
+            slideShow: 'Iniciar',
             activeImage: 0
         }, settings);
 
